@@ -1,0 +1,7 @@
+django
+wheel
+setuptools-rust
+social-auth-app-django
+django-ckeditor
+django-crispy-forms
+gunicorn

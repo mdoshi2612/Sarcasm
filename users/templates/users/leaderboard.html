@@ -1,0 +1,70 @@
+{% extends 'game/base.html' %}
+{% load staticfiles %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/rank.css' %}">
+ <style type="text/css">
+      body{
+        background-image:url("{% static 'images/astro.png' %}") ;
+        background-size: cover;
+      }
+    </style>
+    {% endblock %}
+
+{% block content %}
+<div class="col-md-11 leaderboard">
+  <h1 id="head" >Leaderboard - Players</h1>
+  <div id="playerScore">
+    {% if user.is_authenticated %}
+        {{ user.first_name }} {{ user.last_name }} {{ user.player.roll }} your score is {{ user.player.points }} <img src="{% static 'images/Bonus.svg' %}" alt="">                {{user.player.bonus_attempted}}
+      {% endif %}
+  </div>
+  
+  
+  <div class="flex-row row">
+    <div class="table-div col-md-9" id="leaderboardTable">
+      <table class="tables">  
+        {% for user in queryset %}          
+            <tr>
+              <td>{{forloop.counter}}</td>
+              <td><span>{{user.first_name}} {{user.last_name}}</span></td>
+              <td>{{user.player.points}}</td>
+              <td>{{user.player.department}}</td>
+              <td class="d-flex flex-row"><div><img src="{% static 'images/Bonus.svg' %}" alt=""></div> <div class="ba">{{user.player.bonus_attempted}}</div></td>
+            </tr>
+        {%endfor%}      
+      </table>
+    </div>
+  </div>
+  <h1 id="head">Leaderboard - Departments</h1>
+<!--    <div id="playerScore">
+      {% if user.is_authenticated %}
+          Your department's score is {{ dept_score }} <img src="{% static 'images/Bonus.svg' %}" alt=""> 
+      {% endif %}
+    </div>
+-->
+
+    <div class="table-div col-md-9" id="leaderboardTable">
+      <table class="tables">  
+        {% for dept_name, dept_points in department %}          
+            <tr>
+              <td>{{forloop.counter}}</td>
+              <td><span>{{dept_name}}</span></td>
+              <td>{{dept_points}}</td>
+            </tr>
+        {%endfor%}      
+      </table>
+    </div>
+  
+{% comment %} <div class="col-md-3 mario-leaderboard"><img src="{% static "images/lb.svg" %}"> </div> {% endcomment %}
+  </div>
+  </div>
+{% endblock %}
+{% block post %}
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+
+{% endblock post %}

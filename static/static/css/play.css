@@ -1,0 +1,125 @@
+.row .sub-ttle{
+	padding:20px;
+}
+
+.btn-primary {
+    background-repeat: repeat-x;
+	margin-top:10px;
+    border-color: white;
+}
+
+body{
+background-color: #191919;	overflow-x: hidden;
+	color: #fff;
+	font-size: 2rem;
+}
+
+.questionArea {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.questionumber {
+	width: max-content;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 30px;
+}
+
+.questionontent {
+	display:block;
+	margin-right: auto;
+	margin-left: auto;
+	color: white;
+	font-size: 30px;
+}
+
+#randomInsult{
+	font-size: 30px;
+	color: white;
+	font-style:italic;
+}
+
+.imageArea img {
+	display: block;
+	z-index: 1;
+	height: 359px;
+}
+audio{
+	margin-top:100;
+}
+input{
+	background-color: #191919;
+	height: 55px;
+}
+#id_answer{
+	margin-left: auto;
+	margin-right: auto;
+	width: 85%;
+	color: white;
+	text-align: center;	
+}
+form{
+	width: 70%;
+	margin: auto;
+	z-index: 100;
+	margin-top: 20px;
+}
+.submitButton{
+	width: 25%;
+	margin: auto;
+	margin-top: 10px;
+	padding-bottom: 5px;
+	margin-bottom: 30px;
+}
+.questionMedia img{
+	height: 200px;
+	width: auto;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.questionMedia audio{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.questionMedia video{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.subutton{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.questionumber{
+font-size:60px;
+}
+.sub-ttle{
+font-size:25px;
+text-align:center;
+}
+.footer {
+	margin-top: 5%;
+}
+
+@media only screen and (max-width: 450px) {
+	.footer {
+		margin-top: 15%;
+	}
+.text,.sub-ttle,.submitButton,#id_answer{
+		font-size: 10px;
+	}
+	.questionumber{
+		font-size: 25px;
+	}
+	.submitButton{
+		height: 25px;
+	}
+	input{
+		height: 40px;
+	}
+}

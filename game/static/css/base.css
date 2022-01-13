@@ -1,0 +1,49 @@
+body {
+    background: url("../images/laptop_background.jpg");
+    color: #ffd600;
+}
+
+#gen-info-section {
+    color: white;
+    width: 85%;
+    height: 783px;
+    margin-left: 7.5%;
+    background: #081341;
+    border-radius: 16px;
+}
+
+#gen-info {
+    padding-top: 50px;
+    padding-left: 100px;
+    font-size: 1.25em;
+}
+
+#reg-heading {
+    width: 30%;
+    height: 100px;
+    margin-left: 7.5%;
+    background: #081341;
+    backdrop-filter: blur(42px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 16px;
+}
+
+#reg-heading-content {
+    padding-left: 20px;
+    padding-top: 25px;
+    font-size: 50px;
+}
+
+#reg-section {
+    margin-left: 7.5%;
+    width: 85%;
+    height: 200px;
+    border-radius: 16px;
+    background: #081341;
+}
+
+#reg-section-content {
+    padding-left: 20px;
+    padding-top: 25px;
+    font-size: 1.25rem;
+}

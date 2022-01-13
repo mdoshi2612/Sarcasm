@@ -1,6 +1,33 @@
+@font-face {
+    font-family: Pokemon;
+    src: url('../fonts/pokemonsolid.woff');
+}
+
 body {
-    background: url("../images/laptop_background.jpg");
+    background: url("../images/laptop_background.jpg") fixed;
     color: #ffd600;
+}
+
+.main-heading {
+    font-family: Pokemon;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100px;
+    line-height: 140px;
+    margin-left: 7.5%;
+    /* identical to box height */
+    color: #FFD600;
+}
+
+#reg-heading h1 {
+    font-family: Pokemon;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 140px;
+    margin-left: 7.5%;
+    /* identical to box height */
+    color: #FFD600;
 }
 
 #gen-info-section {
@@ -37,7 +64,6 @@ body {
 #reg-section {
     margin-left: 7.5%;
     width: 85%;
-    height: 200px;
     border-radius: 16px;
     background: #081341;
 }
@@ -46,4 +72,17 @@ body {
     padding-left: 20px;
     padding-top: 25px;
     font-size: 1.25rem;
+}
+
+.col {
+    margin: 10px 0px;
+    text-align: center;
+}
+
+div *,
+div *:before,
+div *:after {
+    -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;
 }

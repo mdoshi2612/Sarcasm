@@ -11,4 +11,5 @@ urlpatterns=[
 	path('instructions',views.instructions, name='instructions'),
 	path('contacts', views.contacts, name='contacts'),
 	path('bonus',views.Bonus.as_view(),name='bonus'),
+	path('home',views.home, name='home'),
 ]

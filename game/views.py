@@ -185,3 +185,5 @@ class Bonus(View) :
 				return redirect(reverse('bonus'))
 		return redirect(reverse('play'))
 
+def home(request):
+	return render(request, 'game/sarcasmbase.html')

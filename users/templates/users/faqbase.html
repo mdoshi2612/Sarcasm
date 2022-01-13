@@ -53,7 +53,8 @@
             <style>
                 body
                 {
-                    background-image:url("bg\ 1.jpg");
+                    /* background-image:url("static/bg\ 1.jpg"); */
+                    background-image: url("{% static 'images/bg\ 1.jpg' %}");
                     /* position: absolute;
     width: 321px;
     height: 67px;
@@ -164,7 +165,7 @@
             
             <div id="faq-section">
                 <div class="question">
-                    <img src="2 3.jpg" class="faq-img">
+                    <img src="{% static 'images/2 3.jpg' %}" class="faq-img">
                     What is SARCasm?
                     <button id="toggle" onclick="showanswer(1)">+</button>  
                     <br>
@@ -174,7 +175,7 @@
                 </div>
                 <br>
                 <div class="question" onclick="showanswer(2)">
-                    <img src="2 3.jpg" class="faq-img">
+                    <img src="{% static 'images/2 3.jpg' %}" class="faq-img">
                     How can you participate?
                     <button id="toggle" onclick="showanswer(1)">+</button>
                     <div class="answer hide" id="ans2">
@@ -183,7 +184,7 @@
                 </div>
                 <br>
                 <div class="question" onclick="showanswer(3)">
-                    <img src="2 3.jpg" class="faq-img">
+                    <img src="{% static 'images/2 3.jpg' %}" class="faq-img">
                     Number of participants?
                     <button id="toggle" onclick="showanswer(1)">+</button>
                     <div class="answer hide" id="ans3">

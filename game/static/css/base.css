@@ -86,3 +86,70 @@ div *:after {
     -moz-box-sizing: content-box !important;
     box-sizing: content-box !important;
 }
+/*Added by Mayank*/
+@media only screen and (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    #gen-info {
+        padding-top: 15px;
+        padding-left: 20px;
+        font-size: 1.25em;
+    }
+    #reg-heading-content {
+        display: none;
+    }
+    #reg-heading h1 {
+        font-family: Pokemon;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 40px;
+        margin-left: 7.5%;
+        /* identical to box height */
+        color: #FFD600;
+    }
+    input{
+        width:200px;
+
+    }
+    #reg-section {
+        width: 95%;
+        border-radius: 16px;
+        background: #081341;
+    }
+    .row
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .row label
+    {
+        margin-left: 2px;
+    }
+    #reg-section-content {
+        padding-left: -100px;
+        padding-top: 25px;
+        font-size: 1.25rem;
+    }
+    .main-heading {
+        font-family: Pokemon;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 80px;
+        line-height: 140px;
+        margin-left: 7.5%;
+        /* identical to box height */
+        color: #FFD600;
+    }
+    #gen-info-section {
+        color: white;
+        width: 85%;
+        height: 500px;
+        margin-left: 7.5%;
+        background: #081341;
+        border-radius: 16px;
+    }
+  }
+/*Added by Mayank*/

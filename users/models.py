@@ -27,6 +27,19 @@ DEPARTMENTS = [u'Aerospace Engineering',
         u'Physics', 
         u'Others'
         ]
+
+class Team(models.Model):
+	leader_name = models.CharField(max_length=100)
+	leader_roll_number = models.CharField(max_length=100)
+	year_of_study = models.CharField(max_length=100)
+	team_name = models.CharField(max_length=100)
+	team_logo = models.CharField(max_length=100)
+	player1 = models.CharField(max_length=100)
+	player2 = models.CharField(max_length=100)
+	player3 = models.CharField(max_length=100)
+	player4 = models.CharField(max_length=100)
+
+
 class Player(models.Model):
 	user = models.OneToOneField(User, on_delete = models.CASCADE)
 	username=models.CharField(max_length=200)

@@ -127,6 +127,18 @@ nav {
     font-size: 2rem;
 }
 
+.col-submit {
+    text-align: center;
+}
+
+input[type=submit] {
+    width: 10%;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
 @media screen and (max-width: 992px) {
     * {
         font-size: 8px;

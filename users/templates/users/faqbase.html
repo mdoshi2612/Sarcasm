@@ -1,0 +1,198 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title>FAQ base</title>
+        <style>
+            body
+            {
+                background-image:url("bg\ 1.jpg");
+
+            }
+            
+        </style>
+    </head>
+    <body>
+        FAQ
+    </body>
+    </html> -->
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>FAQ base</title>
+            <script>
+                function showanswer(x)
+                {
+                    var s="ans";
+                    s+=toString(x);
+    
+                    var el=document.getElementById(s);
+                    //el.classList.toggle("hide");
+                    if(el.style.display=="block")
+                    {
+                        console.log("In if");
+                    el.style.display="none";
+                    }
+                    else
+                    { 
+                        console.log("In else");
+                    el.style.display="block";
+                    }
+                    //console.log(el.classList);
+                    console.log(el.style.display);
+                    return;
+    //                 if (el.style.display !== "none") {
+    //                     console.log("If satisfied");
+    //     el.style.display = "none";
+    //   } else {
+    //     el.style.display = "block";
+    //   }
+    
+    
+                }
+            </script>
+            <style>
+                body
+                {
+                    /* background-image:url("static/bg\ 1.jpg"); */
+                    background-image: url("{% static 'images/bg\ 1.jpg' %}");
+                    /* position: absolute;
+    width: 321px;
+    height: 67px;
+    left: 195px;
+    top: 1295px;
+    
+    font-family: Pokemon Solid;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 67px;
+    text-align: center; */
+    
+    color: #FFD600;
+                }
+                #gen-info-section
+                {
+                    color:white;
+    width: 85%;
+    height: 783px;
+    margin-left: 7.5%;
+    
+    background: #081341;
+    border-radius: 16px;
+                }
+                #gen-info
+                {
+                    padding-top: 50px;
+                    padding-left: 100px;
+                    font-size: 1.25em;
+    
+                }
+                #reg-heading
+                {
+                    width: 30%;
+                    height: 100px;
+                    margin-left: 7.5%; 
+    
+                    background: #081341;
+                    backdrop-filter: blur(42px);
+                    /* Note: backdrop-filter has minimal browser support */
+    
+                    border-radius: 16px;
+    
+                }
+                #reg-heading-content
+                {
+                    padding-left: 20px;
+                    padding-top: 25px;
+                    font-size:50px;
+                }
+                #reg-section
+                {
+                    margin-left: 7.5%;
+                    width:85%;
+                    height: 200px;
+                    border-radius: 16px;
+                    background: #081341;
+                }
+                #reg-section-content
+                {
+                    padding-left: 20px;
+                    padding-top: 25px;
+                    font-size: 1.25rem;
+    
+                }
+                .question
+                {
+                    background: #081341;
+                    border-radius:8px;
+                    font-size:1.25rem;
+                    height: 60px;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    padding:10px;
+                    width:60%;
+                    margin-left:20%;
+                    flex-direction: row;
+    
+    
+    
+                }
+                #centre-heading
+                {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .faq-img
+                {
+                    height: 30px;
+                    padding-right:15px;
+    
+    
+    
+                }
+                .hide
+                {
+                    opacity:0;
+                    display: none;
+                }
+            </style>
+        </head>
+        <body>
+            
+            <div id="centre-heading"><h1>FAQs</h1></div>
+            
+            <div id="faq-section">
+                <div class="question">
+                    <img src="{% static 'images/2 3.jpg' %}" class="faq-img">
+                    What is SARCasm?
+                    <button id="toggle" onclick="showanswer(1)">+</button>  
+                    <br>
+                    <div class="answer" id="ans1">
+                        Answer to Question
+                    </div>
+                </div>
+                <br>
+                <div class="question" onclick="showanswer(2)">
+                    <img src="{% static 'images/2 3.jpg' %}" class="faq-img">
+                    How can you participate?
+                    <button id="toggle" onclick="showanswer(1)">+</button>
+                    <div class="answer hide" id="ans2">
+                        Answer to Question
+                    </div>
+                </div>
+                <br>
+                <div class="question" onclick="showanswer(3)">
+                    <img src="{% static 'images/2 3.jpg' %}" class="faq-img">
+                    Number of participants?
+                    <button id="toggle" onclick="showanswer(1)">+</button>
+                    <div class="answer hide" id="ans3">
+                        Answer to Question
+                    </div>
+                </div>
+                <br>
+            </div>
+        </body>
+        </html> 
+        

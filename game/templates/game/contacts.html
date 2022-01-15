@@ -1,0 +1,228 @@
+{% extends 'game/base.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/contacts.css' %}">
+<!-- <style>
+  body{
+    background-image: url("{% static 'images/bg1.svg' %}");
+    width: 100%;
+    height: 100%;
+    align-items: center;
+     background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+</style> -->
+{% endblock %}
+
+{% block content %}
+
+  <h1 id="head">Contact Us</h1>
+  <div class="cards">
+
+  <div class="card">
+    <img class="card__image" src="{% static 'images/Saijal_Rekhani.jpg' %}" alt="wave" />
+    <div class="card-title">
+      <a href="#" class="toggle-info btn">
+        <span class="left"></span>
+        <span class="right"></span>
+      </a>
+      <h2>
+Saijal       <small>Media and PR</small>
+      </h2>
+    </div>
+    <div class="card-flap flap1">
+      <div class="card-description">
+        Contact - +91-9109774742
+      </div>
+      <div class="card-flap flap2">
+        
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card__image" src="{% static 'images/Dhairya_Jain.jpg' %}" alt="wave" />
+    <div class="card-title">
+      <a href="#" class="toggle-info btn">
+        <span class="left"></span>
+        <span class="right"></span>
+      </a>
+      <h2>
+        Dhairya        <small>Web</small>
+      </h2>
+    </div>
+    <div class="card-flap flap1">
+      <div class="card-description">
+        Contact - +91-7987697281
+      </div>
+      <div class="card-flap flap2">
+       
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card__image" src="{% static 'images/Nandini_Manwani.jpg' %}" alt="wave" />
+    <div class="card-title">
+      <a href="#" class="toggle-info btn">
+        <span class="left"></span>
+        <span class="right"></span>
+      </a>
+      <h2>
+        Nandini Manwani         <small>Media and PR</small>
+      </h2>
+    </div>
+    <div class="card-flap flap1">
+      <div class="card-description">
+        Contact - +91-9370701355
+      </div>
+      <div class="card-flap flap2">
+       
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card__image" src="{% static 'images/Aamir_Nihal.jpg' %}" alt="wave" />
+    <div class="card-title">
+      <a href="#" class="toggle-info btn">
+        <span class="left"></span>
+        <span class="right"></span>
+      </a>
+      <h2>
+        Aamir
+        <small>Design</small>
+      </h2>
+    </div>
+    <div class="card-flap flap1">
+      <div class="card-description">
+        Contact - +91-9847260754
+      </div>
+      <div class="card-flap flap2">
+       
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card__image" src="{% static 'images/Shiven_Raut.jpeg' %}" alt="wave" />
+    <div class="card-title">
+      <a href="#" class="toggle-info btn">
+        <span class="left"></span>
+        <span class="right"></span>
+      </a>
+      <h2>
+        Shiven
+        <small>Design</small>
+      </h2>
+    </div>
+    <div class="card-flap flap1">
+      <div class="card-description">
+        Contact - +91-7768068895
+      </div>
+      <div class="card-flap flap2">
+        
+      </div>
+    </div>
+  </div>
+  <!-- <div class="card">
+    <img class="card__image" src="{% static 'images/vittesh.jpg' %}" alt="wave" />
+    <div class="card-title">
+      <a href="#" class="toggle-info btn">
+        <span class="left"></span>
+        <span class="right"></span>
+      </a>
+      <h2>
+        Vittesh 
+        <small>Web and Creatives</small>
+      </h2>
+    </div>
+    <div class="card-flap flap1">
+      <div class="card-description">
+        Contact - +91-9571709499
+      </div>
+      <div class="card-flap flap2">
+       
+      </div>
+    </div>
+  </div>
+     <div class="row gone">
+      <div class="col-sm-3 col-sm-offset-3 col-xs-8 col-xs-offset-1">
+        <figure>
+          <div class="textg">
+          <h3>&ensp;Achin Parashar</h3>
+          <h4>Web</h4>
+          <h4>+91-9826882698</h4>
+          </div>
+          <img class="img-responsive pho fo" src="{% static 'images/achin.jpg' %}">
+        </figure>
+      </div>
+      <div class="col-sm-3 col-sm-offset-0 col-xs-8 col-xs-offset-1">
+        <figure>
+          <div class="textg">
+          <h3>&ensp;&ensp;Vittesh Arora</h3>
+          <h4>Web</h4>
+          <h4>+91-9571709499</h4>
+          </div>
+          <img class="img-responsive pho fi" src="{% static 'images/vittesh.jpg' %}">
+        </figure>
+      </div>
+      <div class="col-sm-3 col-sm-offset-0 col-xs-8 col-xs-offset-1">
+        <figure>
+          <div class="textg">
+          <h3>&ensp;Akhil Ajikumar</h3>
+          <h4>Design</h4>
+          <h4>+91-9447454732</h4>
+          </div>
+          <img class="img-responsive pho si" src="{% static 'images/shradha.jpg' %}">
+        </figure>
+      </div> -->
+    
+  </div>
+{% endblock %}
+{% block post %}
+<script>
+  $(document).ready(function(){
+  var zindex = 10;
+  
+  $("div.card").click(function(e){
+    e.preventDefault();
+
+    var isShowing = false;
+
+    if ($(this).hasClass("show")) {
+      isShowing = true
+    }
+
+    if ($("div.cards").hasClass("showing")) {
+      // a card is already in view
+      $("div.card.show")
+        .removeClass("show");
+
+      if (isShowing) {
+        // this card was showing - reset the grid
+        $("div.cards")
+          .removeClass("showing");
+      } else {
+        // this card isn't showing - get in with it
+        $(this)
+          .css({zIndex: zindex})
+          .addClass("show");
+
+      }
+
+      zindex++;
+
+    } else {
+      // no cards in view
+      $("div.cards")
+        .addClass("showing");
+      $(this)
+        .css({zIndex:zindex})
+        .addClass("show");
+
+      zindex++;
+    }
+    
+  });
+});
+</script>
+{% endblock %}

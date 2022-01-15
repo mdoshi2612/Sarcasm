@@ -1,0 +1,26 @@
+
+body{
+background-color: #191919;}
+
+.card{
+background-color:#191919!important;
+  height:200px;
+  width: 200px!important;
+  margin: 50px;
+}
+
+.card img{
+	padding-top: 12px;
+	transition: transform .2s;
+}
+.card img:hover {
+	transform: scale(1.1);
+}
+.footer {
+	margin-top: 10% !important;
+}
+
+#head {
+  color: white;
+  text-align: center;
+}

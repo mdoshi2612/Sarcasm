@@ -1,0 +1,24 @@
+{% extends 'game/base.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/contacts.css' %}">
+{% endblock %}
+
+{% block content %}
+
+  <h2 style="margin-top: 10%; margin-bottom: 8%;" > Updates regarding the bonus question to be posted on forum (facebook event), keep checking the facebook event regularly for hints as well </h2>
+  <h1 id="head" style="margin-top: 10%; margin-bottom: 8%;  ">Either you have answered the question or it is not live!<br><br>
+    Each bonus question carries 5 points giving you a chance to score higher, so stay online!</h1>
+
+{% endblock %}
+{% block post %}
+<script>
+    function redirect(){
+       window.location.href = "https://sarcasm.sarc-iitb.org/play";
+    }
+
+    setTimeout(redirect, 5000); //5000 is equivalent to 5 seconds
+</script>
+{%  endblock %}
+

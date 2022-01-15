@@ -1,0 +1,173 @@
+body{
+background-color: #191919;}
+#head{
+		color:white;
+		text-align: left;	
+		font-size: 2.5em;
+}
+.leaderboard{
+	/*margin-top: 50px;*/
+	margin-left: 10%;
+	width: 100%	;
+}
+.table-div{
+	/* border-radius: 10px; */
+	/* background-color: red; */
+	/* padding: 10px; */
+	max-height: 70vh;
+	overflow-y: scroll;
+}
+.tables {
+	font-size: 1em;
+	color: white;
+	/*padding-top: 50px;*/
+	/* background-color: red; */
+	border-collapse: separate;
+	border-spacing: 10px;
+	border-radius: 40px;	
+}
+.table-div::-webkit-scrollbar{
+	width:0;
+}
+tr{
+	border-bottom: 5px solid white;
+}
+
+tr td:nth-child(4n){
+	width: 40%;
+}
+
+tr td:nth-child(4n-1){
+	width: 10%;
+}
+
+tr td:nth-child(4n-2){
+	width: 75%;
+}
+tr td:nth-child(4n-3){
+	width: 5%;
+}
+img{
+	width: 20px; 
+}
+.ba{
+	margin-left: 40%;
+}
+.mario-leaderboard{
+	margin-left: -20%;
+	padding-top: 4%;
+}
+.lines{
+	width: 200px;
+	background-color: lightblue;
+	height: 3px !important;
+}
+
+#leaderboardTable {
+	margin-bottom: 5%;
+	max-width: 55%;
+	margin-top: 30px;
+}
+#playerScore {
+	color: white;
+	font-size: 1.5em;
+}
+#playerScore img {
+	margin-left: 40px;
+}
+
+/*----------------------Media Rules--------------------*/
+
+@media only screen and (max-width:380px){
+	body{
+		font-size: 40%;
+	}
+}
+
+@media only screen and (max-width:460px){
+	body{
+		font-size: 50%;
+	}
+	img{
+		width: 20px;
+	}
+	.leaderboard{
+		margin-top: 10px;
+		/*margin-left: -1%;*/
+		width: 100%	;
+		padding-right: 0%;
+		overflow-x: hidden;
+	}
+	tr td:nth-child(3n){
+		width: 70%;
+		margin-right: 100px;
+		margin-left: -40px;
+	}
+
+	tr td:nth-child(3n-1){
+		width: 10%;
+	}
+	.table-div{
+		/*margin-left: -4%;*/
+		/* overflow-x: hidden; */
+		width: 110%;
+	}
+	.tables{
+		padding-right: 0%;
+		margin-left: 0;
+		margin-right: 0%;
+	}
+	#leaderboardTable {
+		max-width: 90%;
+		margin-top: 5px;
+	}
+
+}
+
+@media only screen and (max-width:680px){
+	body{
+		font-size: 60%;
+	}
+	.table-div{
+		margin-left: 1%;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 991px){
+	#head{
+			margin-top: 15%!important;
+	text-align: center;	}
+	
+	body{
+		font-size: 50%;
+	}
+	
+	.leaderboard{
+		margin: auto;
+		overflow-x: hidden;
+	}
+	.tables{
+		padding: 20px;
+		width: 100%;
+	}
+	td, tr{
+		/* max-width: 60%; */
+	}
+	/* img{
+		display: none;
+	} */
+	}
+
+	#playerScore {
+		/*text-align: center;*/
+	}
+
+
+@media only screen and (max-width: 1400px){
+	body{font-size: 70%;}
+	/* img{
+		width: 500px;
+	} */
+}
+

@@ -1,0 +1,471 @@
+@font-face {
+  font-family: Gilroy-ExtraBold;
+  src: url(Gilroy-ExtraBold.otf);
+}
+@font-face {
+  font-family: Gilroy-Light;
+  src: url(Gilroy-Light.otf);
+}
+@font-face {
+	font-family: AkzidenzGrotesk;
+	src: url(AkzidenzGrotesk-MediumExtended.otf);
+}
+
+
+.background-img{
+  /* The image used */
+
+  /* Full height */
+
+    height: 35%!important;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  display:block;
+  margin:auto;
+  margin-top: 12.5%;
+
+}
+
+.btn{
+	width: auto;
+	height: auto;
+	border-radius: 20px;
+	color: #fff;
+}
+
+.btn:hover{
+	background-color: #fff5f5;
+	color: red;
+}
+
+body{
+	background-color:#191919;
+	overflow-x:hidden;
+	font-family: AkzidenzGrotesk;
+}
+
+.buttons .btn{
+	font-size:35px;
+	margin:auto;
+        display:block;
+}
+
+
+a{
+	outline: none;
+}
+.navbar-container {
+	text-align: center;
+	padding: 10px;
+	font-size: 0;
+	color: white;
+}
+
+.navbar-container ul {
+	margin: 0;
+	padding: 0;
+	text-align: right;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.navbar-container ul li {
+	display: inline-block;
+	font-size: 1.5rem;
+	/*margin-left: 35px;*/
+}
+
+.navbar-container ul li a {
+	color: grey;
+	text-decoration: none;
+	display: inline-block;	
+	padding: 10px;
+	font-size:13px;
+	padding:40px;
+	padding-bottom:10px;
+	transition: color 0.5s;
+}
+
+.navbar-container ul li .underline {
+	height: 3px;
+	background-color: transparent;
+	width: 0%;
+	transition: width 0.2s, background-color 0.5s;
+	margin: 0 auto;
+}
+
+.navbar-container ul li.active-link .underline {
+	width: 100%;
+	background-color: white;
+}
+
+.navbar-container ul li:hover .underline {
+	background-color: white;
+	width: 100%;
+}
+
+.navbar-container ul li:hover a {
+	color:white;
+}
+
+.navbar-container ul li:active a {
+	transition: none;
+	color: rgba(255,255,255,0.76);
+}
+
+.navbar-container ul li:active .underline {
+	transition: none;
+	background-color: rgba(255,255,255,0.76);
+}
+
+.hamburger {
+	display: none !important;
+	z-index: 500;
+}
+
+#aluminationLogo {
+	/* position: relative;
+	display: block; */
+	width: 40%;
+	/* top: 25%; */
+	/* margin-left: auto;
+	margin-right: auto; */
+}
+#aluminationLogo-overlay {
+	position: relative;
+	display: block;
+	width: 40%;
+	top: 25%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#mark{
+	width: 40px;
+}
+
+#overlayImage {
+	/*display: none;*/
+	z-index: 401;
+	transform: translateX(-200%);
+	transition: transform 1s ease-in-out;
+}
+
+#listVSV {
+	/*display: none;*/
+	z-index: 400;
+	transform: translateY(-125%);
+	transition: transform 1s ease-in-out;
+	background-color: #191919;
+	margin-top: -20px;
+}
+
+/*------------- Media Rule for ipad-------------------*/
+
+@media only screen and (max-width: 1200px) {
+  #navbarVSV { 
+  	display: none; 
+  }
+  
+  body {
+  	background-color: #191919;
+  	background-image: none;
+  }
+
+
+  /*#aluminationLogo {
+	position: absolute;
+	display: inline-block;
+	width: 65%;
+	top: 2% !important;
+	left: 5%;
+
+  }*/
+
+  #aluminationLogo {
+	  /* z-index: 2; */
+	/* position: absolute; */
+	/* display: block; */
+	width: 240px;
+	/* top: 2% !important; */
+	/* left: 20vw; */
+	/* margin-left: auto; */
+	}
+
+  .hamburger {
+	display: inline-block !important;
+	position: absolute;
+	right: 4%;
+	top: 20px;
+	color: white;
+	}
+
+	.overlay {
+		margin-top: 0px;
+	}
+
+	#overlayImage {
+	width: 75%;
+	position: absolute;
+	left: -38%;
+	top: 20%;
+	height: 70%;
+	}
+
+	.navbar-container ul li {
+		display: block;
+	}
+
+	.navbar-container ul li.active-link .underline {
+		width: 20%;
+	}
+
+	.navbar-container ul li:hover .underline {
+		width: 20%;
+	}
+
+	.navbar-container ul {
+		text-align: center;
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 15%;
+		left: 0%;
+	}
+
+	.nav-link {
+		position: relative;
+		left: 5%;
+	}
+}
+
+#listVSV{
+    margin-top: -110px;
+    width: 100%;
+    height: 135%;
+    top: -12%;   
+}
+
+/*------------------------------------sdflsfjdsjf--------*/
+.navbar{	
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 6vw;
+	height: 100%;
+	box-shadow: 5px 0px 30px  #ff0000;
+	border-radius: 0px 45px 45px 0px;
+	background-color: #ff0000;
+}
+.navbar img{
+	display: block;
+	height:auto; 
+	width: 40%;
+	margin-top: 85%;
+	margin-bottom: 65%;
+	margin-left: auto;
+	margin-right: auto;
+	transition: transform .2s;
+
+}
+
+.navbar .help img{
+        display: block;
+        height:auto; 
+        width: 30%;
+        margin-top: 85%;
+        margin-bottom: 65%;
+        margin-left: auto;
+        margin-right: auto;
+        transition: transform .2s;
+
+}
+
+
+.navbar img:hover {
+	transform: scale(1.3);
+}
+.navbar img:hover + .icons{
+	opacity: 1;
+	color: white;
+}
+
+.vivek {
+	display: inline-block;
+}
+
+.footer {
+	width: 100%;
+	margin-top: 2%;	
+}
+
+.footer img {
+	display: inline-block;
+	height: 57.5px;
+	width: 40.9px;
+	margin: 0.5vw;
+	transition: transform .2s;
+}
+
+
+
+.footer img:hover{
+	transform: scale(1.1);
+}
+#footerLogo{
+	transform: scale(1.1);
+}
+a{
+	text-decoration: none!important;
+	color: white;
+}
+.icons{
+	opacity: 0;
+	text-decoration: none;
+	text-align: center;
+	margin-top: -50%;
+	margin-bottom: -45%;
+	font-size: 20px;
+
+}
+
+#footerLogo {
+	display: block;
+	width: 75px;
+}
+
+#aluminationLogo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+/*---------------------Media Rules-----------*/
+
+@media only screen and (max-width: 450px) {
+	#overlayImage {
+	width: 86%;
+	position: absolute;
+	left: -38%;
+	top: 25vw;
+	}
+.navbar-container ul li a {
+padding:10px!important;}
+	.navbar-container ul {
+		width: 80%;
+	}
+
+	.navbar-container ul li.active-link .underline {
+		width: 35%;
+	}
+
+	.navbar-container ul li:hover .underline {
+		width: 35%;
+	}
+
+	.hamburger {
+		right: 0;
+		top: 1%;
+	}
+
+	.nav-link {
+		position: relative;
+		/*left: 15%;*/
+	}
+
+	#footerLogo {
+		/*display: none;*/
+		width: 60px;
+	}
+	#helpLink {
+		display: none;
+	}
+	#mediaIcons {
+		display: flex;
+		margin-left: 5%;
+		margin-right: auto;
+		width: 100%;
+	}
+
+	/*.footer {
+		margin-top: 22%;
+	}*/
+}
+
+@media only screen and (max-width: 750px){
+	.navbar{
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 6vh;
+		border-radius: 0px 0px 15px 15px;
+		z-index:10;
+		box-shadow: 5vh 0vh 4vh #ff0000;
+	}
+.navbar-container ul li a {
+padding:10px!important;}
+
+	.navbar img {
+		display: inline-block;
+		float: left;
+		height: 4vh;
+		width: 3.5vw;
+		margin-top: 1vh;
+	    margin-bottom: 1vh; 
+	    margin-left: 6.0vw;
+	    margin-right: 6.0vw;
+	}
+	.navbar .help img {
+                display: inline-block;
+                float: left;
+                height: 2.5vh;
+                width: 3.5vw;
+                margin-top: 2vh;
+            margin-bottom: 1vh; 
+            margin-left: 6.0vw;
+            margin-right: 6.0vw;
+    }
+	.navbar img:hover + .icons{
+		opacity: 1;
+		color: white;
+	}
+	.footer img{
+		width: 20px;
+		/*display: none;*/
+	}
+	#footerLogo {
+		/*display: none;*/
+		width: 60px;
+	}
+	#helpLink {
+		display: none;
+	}
+	#mediaIcons {
+		display: flex;
+		margin-left: 5%;
+		margin-right: auto;
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	#listVSV{
+		display: none !important;
+	}
+	
+	#aluminationLogo {
+		display: none !important;
+	}
+
+	#overlayImage {
+		display: none !important;
+	}
+
+}
+
+

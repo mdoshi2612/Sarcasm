@@ -1,0 +1,72 @@
+{% extends 'game/base.html' %}
+{% load static %}
+{% block css %}
+<style>
+    html{
+        min-height: 100%;
+    }
+    .footer-dhairya{
+        position: absolute;
+        bottom: 0px;
+    }
+    #sarcasmLogo{
+        width: 50%; 
+        margin: 5% 0 6% 0;
+    }
+    .d1{
+        height: inherit; 
+        margin-bottom: 2%;
+    }
+    .b1{
+        height: 50px; 
+        width: auto;
+	padding-left:15px;
+	padding-right:15px; 
+        font-size: 30px;
+    }
+    #aluminationLogo{
+            display: none;
+        }
+    .footer {
+        margin-top: 5%;
+    }
+    .letsPlayButton:hover {
+        color: black;
+
+    }
+    @media only screen and (max-width: 750px){
+        #sarcasmLogo{
+            width: 80%;
+            display: inline;
+            vertical-align: super;
+            margin: 40% 0 6% 0;
+        }
+        
+    }
+
+</style>
+
+
+{% endblock %}
+
+
+{% block content %}
+<!-- HOME AREA -->
+<div class="d-flex flex-column">
+    <div class="row justify-content-around">
+        <img src="{% static 'images/Asset 1.svg' %}" id="sarcasmLogo" alt="">
+    </div>
+    {% if not user.is_authenticated %}
+    <div class="row justify-content-around d1">
+        <a href="{% url 'social:begin' 'google-oauth2' %}?next={{ request.path }}"><button class="b1" type="submit">Login with GOOGLE</button></a>
+    </div>
+    {% else %}
+        
+    <div class="row justify-content-around d1">
+            <a class="letsPlayButton" href="{% url 'play' %}"> <button class="b1" type="submit">Let's play</button></a>
+    </div>
+    {% endif %}
+</div>
+<!-- END HOME -->
+{% endblock %}  
+

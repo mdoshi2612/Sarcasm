@@ -1,0 +1,67 @@
+{% extends 'game/base.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/instructions.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container-inst">
+	<h1 id="head">Instructions</h1>
+	<div class="content row col-md-10 col-sm-12 offset-">
+		<div class="col-md-11 col-sm-12  instlist">
+			<ul class="d-block ">
+                <li>Please read the instructions below carefully!</li>
+				<li>If you face any issues ... 
+				<ul>
+					<li>In case the website is not working, try pressing Ctrl+F5 or open the website in incognito mode.</li>                
+					<li>Disable the pop-up block. </li>
+					<li>If you are a freshie and unable to login, contact 7987697281 ASAP </li>
+				</ul>
+				</li>
+				<li>Unless you login with your IITB Google Suite Account in the browser you will not be able to play the game. </li>				
+					
+				<li>The Referral System
+				<ul>
+					<li>As soon as you login, you'll be redirected to a registration form. Compulsory fields will be marked with *</li>
+					<li>An additional field "Referral" is added to the form. You can refer a friend by writing his/her roll number</li>
+					<li>Write the roll number (9 characters) in capitals i.e. 18B080006 (not 18b080006)</li>
+					<li>This form will be opened only once per user. Choose your friends wisely ;)</li>
+					<li>What will a referral mean: Extra 2 points to your friend</li>
+					<li>You can ask upto 3 friends to refer you while registration, totalling to getting a maximum of 6 points through the referral system</li>
+				</ul>
+				</li>
+                <li>SARCasm is an online crypt hunt running for 30+ hours – 20th March 2:00 pm to 21th March 11:59 pm.</li>
+				<li>How to answer:
+				<ul>
+					<li>The answers to all the questions revolve around the insti or its people.</li>
+					<li>You will be redirected to the next question when you type the correct answer to the previous question. </li>
+					<li>Frame your answer with no capital letters, no spaces and no special characters line full stop, comma, dash, etc. Example if your answer is Hostel-8, enter it hostel8 instead of h8, H8, h 8, h-8 and so on. </li>
+					<li>So if your answer isn’t accepted please try out different variants of it before jumping to other possible answers.</li>
+					<li>Each question contains 3 points unless specifically mentioned in question otherwise.</li>	
+				</ul>
+				</li>
+                <li>Stay attached to your computers for the bonus question. It will come randomly for a limited time and gives you a chance to score high.
+				<ul>
+					<li>There will be a separate ‘Bonus’ tab in which the bonus questions will appear randomly for a small duration within the game.  </li>
+					<li>Each bonus question carries<b> 5 points</b> giving you a chance to score higher, so stay online! </li>
+				</ul>
+				</li>
+			
+                <li>Keep checking the leaderboard, it will show your rank in the crypt hunt.</li>
+		<li>Visit the forum to get hints which we post periodically according to the time and need.</li>
+<li> case two or more contestants have the same score, the tie-breaker will not be the number of bonus questions solved, but will be decided by who reached the score first</li>		
+<li>Each question can be answered multiple times, so be liberal with your guesses.</li>
+		<li>Refrain from posting the answers on the forum which can result in the ban of that user. </li>
+		<li>In the interests of the spirit of the competition, avoid solving in groups or giving answers away for love or money. The game will be thrilling to the player the most when played alone. SARCasm can be scathing, but it loses its sting if shared with too many people. :)</li>
+		<li>The desire for fame tempts even the noblest of minds. We at SARC are no exception. Please do like us on our FB page, to stay connected for more awesome events.
+<a href="https://www.facebook.com/SARC.IITB/">https://www.facebook.com/SARC.IITB</a></li>
+              </ul>
+		</div>
+		<!-- <div class="col-md-2 col-sm-2 offset-2">
+			<p class="imagearea"><img src="{% static "images/inst.svg" %}" id="mario"></p>
+		</div> -->
+	</div>
+</div>
+{% endblock %}
+

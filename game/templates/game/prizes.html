@@ -1,0 +1,32 @@
+{% extends 'game/base.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/prizes.css' %}">
+{% endblock %}
+
+{% block content %}
+<h1 id="head">Prizes</h1>
+
+<div class="d-flex flex-wrap justify-content-around " style="width: 63%; margin: auto;">
+    <div class="row card col-lg-3"><img src="{% static 'images/pr1.svg' %}"></div>
+    <div class="row card col-lg-3"><img src="{% static 'images/pr4.svg' %}" ></div>
+    <div class="row card col-lg-3"><img src="{% static 'images/pr5.svg' %}"></div>  
+    <div class="row card col-lg-3"><img src="{% static 'images/pr2.svg' %}" ></div>
+    <div class="row card col-lg-3"><img src="{% static 'images/pr6.svg' %}" ></div>
+    <div class="row card col-lg-3"><img src="{% static 'images/pr7.svg' %}" ></div>
+    <!-- <div class="row card col-lg-3"><img src="{% static 'images/pr8.svg' %}" ></div> -->
+    <!-- <div class="row card col-lg-3"><img src="{% static 'images/pr9.svg' %}" ></div>
+    <div class="row card col-lg-3"><img src="{% static 'images/Asset 12.svg' %}" ></div> -->
+  </div>
+
+<!-- <div class="row">
+    <div class="col-xs-8 col-xs-offset-3 col-sm-4 col-sm-offset-3 col-md-3 col-md-offset-2 col-lg-2 col-lg-offset-3 card"><img src="{% static 'images/pr1.svg' %}"></div>
+    <div class="col-xs-8 col-xs-offset-3 col-sm-4 col-sm-offset-1 col-md-3 col-md-offset-1 col-lg-2 col-lg-offset-0 card"><img src="{% static 'images/pr2.svg' %}" ></div>
+    <div class="col-xs-8 col-xs-offset-3 col-sm-4 col-sm-offset-3 col-md-3 col-md-offset-1 col-lg-2  col-lg-offset-0 card"><img src="{% static 'images/pr3.svg' %}"></div>
+    <div class="col-xs-8 col-xs-offset-3 col-sm-4 col-sm-offset-1 col-md-3 col-md-offset-2 col-lg-2 col-lg-offset-3 card"><img src="{% static 'images/pr4.svg' %}" ></div>
+    <div class="col-xs-8 col-xs-offset-3 col-sm-4 col-sm-offset-3 col-md-3 col-md-offset-1 col-lg-2 col-lg-offset-0 card"><img src="{% static 'images/pr5.svg' %}" ></div>
+    <div class="col-xs-8 col-xs-offset-3 col-sm-4 col-sm-offset-1 col-md-3 col-md-offset-1 col-lg-2 col-lg-offset-0 card"><img src="{% static 'images/pr6.svg' %}" ></div>
+  </div> -->
+{% endblock %}
+

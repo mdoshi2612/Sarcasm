@@ -1,9 +1,12 @@
 from django.shortcuts import render
+from django.http import HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views import View
 from django.contrib.auth.models import User
 from .models import Level, BonusQuestion
+from users.models import Team
+from users.forms import TeamForm
 from .forms import LevelForm
 from django.shortcuts import redirect
 from django.utils import timezone
@@ -186,4 +189,15 @@ class Bonus(View) :
 		return redirect(reverse('play'))
 
 def home(request):
-	return render(request, 'game/sarcasmbase.html')
+	if request.method=="POST":
+		form=TeamForm(request.POST)
+		if (form.is_valid):
+			#Check for Redundant Roll Numbers
+			form.save()
+			return HttpResponseRedirect('/')
+
+	else:
+		form=TeamForm()
+
+	
+	return render(request,'game/sarcasmbase.html')

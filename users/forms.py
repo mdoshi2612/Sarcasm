@@ -2,7 +2,13 @@ from django import forms
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
 
-from .models import Player#,userdata
+from .models import Player, Team
+
+class TeamForm(forms.ModelForm):
+    class Meta:
+        model=Team
+        fields='__all__'
+
 
 class UserRegisterForm(forms.ModelForm):
 	email=forms.EmailField(label="Personal Email Address")

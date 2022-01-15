@@ -13,7 +13,7 @@
 }
 
 body {
-    background: url("../images/laptop_background.jpg") no-repeat fixed;
+    background: url("../images/laptop_background.jpg") fixed;
     color: #ffd600;
 }
 
@@ -141,8 +141,8 @@ input[type=submit] {
     width: 10%;
     padding: 1rem;
     border-radius: 1rem;
-    margin: 1rem 0;
-    font-size: 1.5rem;
+    margin: 2rem 0;
+    font-size: 2rem;
 }
 
 nav {
@@ -166,6 +166,11 @@ nav {
 .navbar-ele a {
     color: grey;
     text-decoration: none;
+}
+
+.navbar-links ul li a {
+    font-size: 2rem;
+    padding-bottom: 3rem;
 }
 
 * {
@@ -247,7 +252,7 @@ body {
     border-radius: 10px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 992px) {
     nav {
         border: none;
         background-color: transparent;
@@ -259,9 +264,6 @@ body {
     }
     #navbar-img {
         display: none;
-    }
-    body {
-        background-color: hotpink;
     }
     .navbar {
         flex-direction: column;
